@@ -1,0 +1,1 @@
+This is still in progress. The code that is written is not finished and is not clear of syntax. The purpose here is to show what is accomplished as well as providing insight to the structure of the game
