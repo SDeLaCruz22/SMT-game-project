@@ -1,0 +1,160 @@
+Modifications of the code:
+
++Structure of Party (including more UI?)
+-struct of Party containing names, current hp, hidden max hp, current mp, max mp, stat values, skill sets, exp?, level, status?, 
+
++Player
+- Things outside of combat and dungeon crawling that the player can interact with
+- Player stats should probably be its own thing containing virtually the same info as any other entity
+- Improve COMP, opening COMP should be a navigatable menu
+- Menu should include general status, member status, party order, items, equipment, 
+
++Structures for enemies
+- contains their name, hp, mp, base stats, level, skill set,
+- Should probably be enum and be alphabetical
+
++Skill information
+- Should be its own struct or something. 
+- Contains name, type (i.e. physical, magic etc), subtype(ice, fire, ), base stats, scaling,  
+
++Healing
+- should use the structure for each entity informtation to determine the max heal value. 
+- universal healing calculator.
+
++Damage
+- should use struct information of entities
+- universal damage calculation? (something like basedmg*(1+scaleratio*stat)*(1-DEFstat)*1.15^tarukaja*.85^rakukaja*lvlscaling)
+
++Events
+- Dialogue should be kept in a text file, print a certain amount of strings at a time (using | as an indicator)
+- Special events that require actual code should have their own mini functions
+
++Enemy AI
+- Be less random with skills (random targeting seems to be ok)
+- Less buffs and less heals, more attacking. Buffs make them significantly more difficult, and healing makes them extremely annoying without healing calculation being reworked (which is planned anyways, but constantly healin enemies would still be annoying)
+
+
+
+
+
+
+Modifications of the game:
+
++Reworked stats
+- Stats arent properly adjusted. Damage is absurdly high (especially as a low level) and health values are low
+- Demons have an intial of 5 stat point starting, increase by 1. Level 10 or 15 is highest
+- HP is determined by str, vit, and level (i.e. hp= 2.5*vit+1*str+ 5*level +base health);
+- Str stat increases power & slightly increases health pool (2 hp per str)
+- Mag stat increase MAtk & increases MP (3mp)
+- Vit incraeses health (4hp) and increases damage resistance (max 25%)
+- Agi increases (turn order?) chance of fleeing, dodging, hitting, and slight critical
+- Luck increases crit rate, macca income, crit resistance, aliment infliction/evasion
+
++Affinities
+- Include weakness and resists and the such. This will make combat more dynamic. 
+
++More Skill variety
+- Include more types like aliments and other support skills. Readjust what skills demons inheritantly have
+
++More skills per member
+- applies both ways, this should decrease difficulties in enemy AI
+
++Friendly Demons skills
+- Demons can learn new skills upon leveling up
+ 
++Reworked Skill information
+- Damage skills should include base stat, type, subtype, MP cost, number of hits
+
++More equipment
+- More pieces, more stat variation (diff pieces affect different Stats
+
++An incentive rewarding good players
+- Press turn is too much. Personally I want something new, I at least want to input things that are of my own
+- Hitting a weak point allows the same character to act again after the initial volley of attacks. Only happens once per turn unless noted (kind of like Devil Survivor)
+
++Bigger Map
+- More NPCs, bigger town
+- Bigger map, less tedium things 
+- Include stairs?
+
++More Difficult boss
+- Deathbound should do about 50-70% of the party's health without any buffs/debuffs
+- Zandyna should kill anything with no buffs/debuffs
+- Kills Anything weak to force first, avoids using it on resists
+-Given the buffs/debuff system, the .7 system would give a total of 50% reduced damage (so Deathbound should kill all, and zandyne should almost kill 2x)
+ex if the average party hp is 150, deathbound after 3 rakus or tarundas would do 105 damage each. We want deathbound to be healable and zandyne to be close to healable (70% of the damage is healed)
+150->105->75
+210->147->103
+In this case healing should be in the interval >=75 and <103
+
+
+?Attack Distributor
+- Distributes the attack to your team
+
+Ambiitions Additions (fantasy):
+
++Every Skill can be used (almost no worthless skill)
+- Certain healing skills should be worth more. This could mean having  a boss that deals status related damage
+
++Chain effect support for aliments (Dx2 inspired)
+- encourage players who want to go for aliment inducing builds. Examples include more damage to enemy with certain aliments, passive abilities that grant more aliments on top of buffs/debuffs, dramatic increase in item drops, demon recruitment (including unrecruitables), guaranteed kill conditions (not applicable to most bosses of course). Great for random encounters
+
++An incentive rewarding good players part 2
+- Hitting the weak point will also result in a chance to inflict element specific statuses. 
+  -Physicals can inflict TRAUMA- a 10% defense drop and increase base chance for crit by 15%
+  -Fire can inflict BURN - a 5% max health true damage before and after enemy turn, applies a 10% reduction in attack (the fire poison dream team)
+  -ice can inflict FROSTBITE - lowers defense 10%, any damage received will be reflected back 25%. Stacks with reflected attacks
+  -electric can inflict SHOCK -  -1 action
+  -force can inflict NAUSEA - -10% accuracy evasion, single hit attacks -50% accuracy
+  -Can be stacked with each other
+  -Low chance of happening (will depend on luck, 20% max with max luck), certain skills can affect the probability and the effectiveness
+  -Secondary effect debuffs are multiplicative, 
+
+- More ambitious: hitting a weak point also rewards in building a meter that when full will activate a signle effect (ex. free mana cost for team, mega charge/concentrate, constant healing of party for x turns, ). For story reasons this happens because his Messian power becomes temporary unleashed. 
+- Increase item drop chance, automatic demon recruitment, money
+- Of course its recirprocated. Furthermore being hit with a weakness decreases the meter, only happens if the MC gets hit with it. Nulls, Repels, and drains also deplete this meter as well as the second attack (only applies to the member that acted, everyone else can keep their seconod attack if applicable). 
+  -List of Messian Decrees
+    - Prosperous - Mana costs are ignored (early versions apply to a single party member, can apply to whole team)
+    - Devastate - a mega charge/concentrate 3.5x
+    - Defiant - guaranteed hit(s) no matter what
+    - Greed - money earned in battle is multiplied by x*+# of enemies defeated this turn
+    - Ferocious - 2.5x critical attack on any attack
+    - Insightful - experience earned in battle is multiplied by x*# of enemies defeated this turn
+    - Charismatic - the first x # of attacks this turn deal y*damage
+    I could go on with these (tbh a lot of these would be extremely broken, but the ideas are nice)
+- It would be too broken late game if the mid to late game bosses didn't have similar effectiveness
+  -List of Boss Specific Sacred Arts
+    - Beelzebub - King of Flies - Death Flies will instant kill pierce
+    - Lucifer - Morning Star - All attacks will be almighty and deal 1.5x the damage to the whole party
+    - Satan - Judgement - 
+    - YHVH - Universe - 
+    
++Ultimate boss fight that changes types of attacks
+  - it would change forms to change what kind of attacker he is
+    - for example a form could be "Deliverer of Faith" (luck build) where he specializes in inducing aliments and criticals, "The All Mighty" specializes in heavy physical attacks
+      "Ancient One" specializes in heavy magic attacks "Lightspeed" (agility) specializes in attacks that hit multiple times etc.
+
+
+WHAT THE FUCK ARE ARRAY OF Structures
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "demon.h"
+
+void scan(struct EntityInfo *x);
+
+int main(void) {
+  FILE *fp;
+  char *c;
+  int i=0;
+  struct EntityInfo (*Demon)[];
+  Demon=&Entity;
+  scan(*Demon);
+  printf("%s", (*Demon)[0].name);
+  return 0;
+}
+
+void scan(struct EntityInfo *x){
+  (x)[0].name=malloc(sizeof(char*)*10);
+  strcpy((x)[0].name, "Pixie");
+}

@@ -1,0 +1,66 @@
+HP = lvl*6 + 4*vit + 2*str;
+MP = (LVL + MAG)*3
+DAMAGE = (LVL + ATK - DEF/4)*base dmg/15 * CRIT MOD/WEAKNESS MOD * 
+Hit/Evade = [Skill Hit + (User Agi - Target Agi) + (User Luck - Enemy Luck)/5] * SUKUKAJA * SUKUNDA (note that base hit is very high for most skills)
+Minimum Hit = Base Skill hit / 5
+Critcal Chance = Base crit chance + (User luck - Target Luck)*3 + (User agi - target agi)/4 (0 if negative)
+Aliment Chance = Base Aliment chance + (User luck - Target luck) + (User agi - Target Agi) (here aliment base rates are higher, won't work on bosses)
+Healing: base heal * (lvl + mag)/15
+
+STR- 
+
+Random HIt chance: (this is a lot of steps) 
+We take the difference of the min and max hits 
+We do a 2^difference*10-2*agility points
+Then we go down from the difference till 0 to do 2^x and add that from the previous value calculated. The final value will be the modular number (also biggest)
+Conduct the RNGesus divided by the modular
+The number of hits is determined by which range of numbers it falls between
+Ex: 2-4 hits w/ 5 points agility--> 4-2 = 2 --> 2^2*10 =40, 40+2^1*10 = 60, 60+2^0*10= 70
+rand()/70 = x --> if(x<agility (5)) reroll --> x+=agility (for now x is 34-->39).
+Final x is 39 which is less than the 40 so 2 hits will be dished
+You may notice initially the probabity was 4/7, 2/7, & 1/7 after doing the reductions and incretions it became, 30/65 (6-35), 20/65 (36-55), 15/65  
+
+We can redesign the computation
+Modular number = Max value for highest hitting = (2^(difference + 1) - 1)*10
+For loop it down and stop after computing at x=0, save those values. We take the difference of the agility, user agi - target agi = agiDiff
+x = rand()/modular if(x<agDiff) reroll -->x+=agiDiff --> check which range x belongs to, spit out number of hits
+
+
+
+Experience need for next level = 5*lvl^(1.9) this gives us 100 less exp than we wanted but its close enough
+Expgain = 5*enemy level/2
+    level   Expgain     Wanted Progress Experience Needed (estimated)
+    1       2.5         1 fight         5  (these were calulated by estimateing that the avg exp per demon was the level and that there would be 2)
+    2       5           2               20
+    3       7.5         3               45
+    4       10          4               80
+    5       12.5        5               125
+    6       15          5               150
+    7       17.5        5               175
+    8       20          5               200
+    9       22.5        5               225
+    10      25          
+
+Battle (player)
+Encounter Screen -> Choose attack/skill -> Choose target -> Checks for # of hits -> calculates what hits will land , if land -> damage formula return
+
+Battle (ai)
+Encounter rng -> random enemy +- 2 levels from player, 1-3 enemies -> calculate agility -> compare agility -> battle -> calculate turn order -> random skill or attack -> random target -> 
+
+Roadmap for Random Encounter
+    Which party goes first?
+    First party is organized by fastest to slowest members
+    Display the options
+        Attack & Skill
+            Choose & confirm target
+            Spend resource
+            Accuracy check
+            Damage/heal/support check
+            END OF MEMBER'S TURN
+        Talk (friendly party only)
+
+        Flee (friendly party only)
+            chance of fleeing, if fail goes to enemy team
+At any point the player can go back except when they confirm the target
+
+
