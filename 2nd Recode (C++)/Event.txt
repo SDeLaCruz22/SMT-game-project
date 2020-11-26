@@ -1,0 +1,188 @@
+1.
+The world was struck with what is known as the Great Calamity, an event in which only the eldest have witnessed.
+It was a time where the progress of civilization was reverted back to its barebones.
+And though the cause of the Great Calamity remains unknown,from it came entitities of the supernatural who arose from the unknown- demons.
+They have come upon mankind to claim this world as theirs.
+However, factions within the demons were created and have been fighting a war amongst each other with mankind being caught in the crossfire.
+Some factions chose not to participate in the conflict of inheriting the new world and took it upon themselves to guide humanity back in power.
+These small pockets of humanity's remaining hope are scattered around the world, waiting for the oppurtunity to come back. 
+!
+
+2.
+Voice from afar: ..ert...mons....uary | Feminine voice: ...st leave here..... | Distorted voice: ...ill the...iah... 
+Feminine voice: see...xt life
+Looming voice: Wandering human, identify yourself!
+Looming voice: You are no longer what you were.
+Looming voice: A new era is upon us 
+Looming voice: The Goddess awaits your prescence, Hear her calls!
+Goddess: %s. Call out my name! Make my destiny be entertwined with yours!, party[0]
+Looming voice: Now awake yourself, and march towards your baptism to begin your new life!
+You awake from the dream and find yourself in the middle of a barren wasteland.
+The view is still as you remembered, a broken artifact of a past almost forgotten.
+Despite not knowing where you are, you walk knowing what path to take.
+A cave appears to you and you walk into it...\n\n\n
+!
+
+3. 
+As you wandered inside the cave you find a sealed gate with flames hanging around it. As you approach you hear a loud bang that must have came from a gun, and you instinctively stop. You look around, but the shadows of the cave conceal any sort of visual presence 
+Voice: STOP! Hands in the air! Any sudden movement, and you will be shot! 
+Out of fear, you slowly raise your hands.
+Voice: Show your blood! 
+The town gaurd throws a small pick at your feet. You carefully pick it up and you slowly stab the palm of your hand, enough to show the blood spilling from it. You raise your arm to show the blood ooze down 
+Voice: Clear!
+From the corner of the cave, a man in metallic armor holding a rifle stalks away from the shadows. It's clear he must be guarding the gate
+Guard: Where do you come from? 
+You shrug, saying that you don't remember anything about yourself 
+Guard: Hmmm.... What do you want?
+You say that you were passing by, needing a place to rest and equip before moving on. 
+He visually inspects you and stares at the comp tied to your arm.
+Guard: Hey, is that a COMP? Where did you find such a thing? And you aren't even carrying a weapon with you. 
+I don’t know how you survived out there without being able to protect yourself, even with a COMP. Here, take this knife with you. I won't be needing it too much, I got this rifle after all. //too sudden
+He knocks on the gate in a rhythmic manner, and the gate opens from the inside. 
+Guard: Hey Kid! Before you go, what's your name? 
+Guard: %s...I see. Go ahead %s, hope to see you alive next time., party[0], party[0] 
+The gate closes behind you and you see the sanctuary in front of you. People carry on with their normal lives.
+!
+
+4. Armor shop
+(entering) 
+Armorer: What a scrawny kid you are
+Armorer: Anyways, what can I do for you, kid?
+
+(leaving)
+Armorer: Try not to die kid
+
+(Failed Purchase)
+Armorer: I might be old, but I can still count. You missing some macca
+
+(Event triggerd/detriggered)
+(Before finding lost armor)
+Armorer: Hey have you seen some armor lying around here? Some punk ran off with my stuff, but I don't think he got very far. He was too weak to handle it! 
+
+(Before meeting Weaponsmith, leaving)
+Armorer: Say hi to my brother,will ya? He runs the weaponshop near here
+
+(After meeting weaponsmith, after entering dialogue)
+Armorer: Oh you've met my brother?
+You look at him confused. You are very certain its the same person.  You tell him this
+Armorer: Watcha talking about? Dontcha got any eyes? Sheesh.
+You decide to let it go for now
+
+5. Weapon Shop
+(Entering)
+Weaponsmith: A sword is destined to be drawn today
+(Leaving)
+Weaponsmith: Don't let your blade be dull
+(Failed Purchase)
+Weaponsmith: A good swordsman always has the pride to pay the price
+
+(Events)
+(First time entering)
+Weaponsmith: Ever since the Great Calamity, you can't seem to find a person who isn't carrying a weapon around here 
+(Amorer mini event)
+You enter the shop and realize that the weaponsmith looks remarkably like his brother. In fact you think its the same person. 
+Weaponsmith: Oh my brother sent you here. Well I want none of it, I won't talk to him again.
+
+6. Ame no Uzume 
+(entering)
+Ame no Uzume: The Amatsukami sent me here to provide assistance to a potential messiah in rising. 
+Ame no Uzume: Here let me heal your wounds and replenish your energy. 
+(leaving)
+Ame no Uzume: Please come back here whenever
+ 
+7. Crazy Old Man
+Old Man: In one life, I was a man very much like you and I committed the ultimate sin, but I don't remember what I did. 
+Old Man: In another life, I vaguely remember helping out a kid who had become a demon on the outside, but a human inside. I feel regret for that life, and again, I don't remember what happened. 
+Old Man: I hope I make this life less tiresome. 
+Woman: Stop talking crazy! Sorry about him, he is a little delusional. 
+
+8. The Little Girl with the Dog
+Little Girl: Ever since daddy went out, I've been living with my doggy Pascal and he is my best friend. He protects me from the demons, but he isn't very nice to others. 
+Pascal *bark *bark*. 
+Little Girl: Thats weird, Pascal likes you. I wonder why...? 
+ 
+(holding nihil and necklace)
+Little Girl: Is that...daddy's sword... 
+Realizing this is the girl the traveler mentioned as his last word, you give her the necklace 
+Little Girl: *sob*...*sob*... 
+Little Girl:... 
+You see the dog, Pascal, grow in size. It stares into your eyes, as if its valuing your soul. You hear a voice inside your head 
+Voice: I am Cerberus 
+Cerberus: She may be crying right now, but it is for the better that she knows 
+Cerberus: That man was a former master of mine, I've been serving him for several lifetimes 
+Cerberus: Thank you for your empathy. As a token of my appreciation, I will restore the power of that sword, Nihil, for your wielding 
+>You obtained Nihil 
+Cerberus: You may go, I will watch over this girl 
+
+9. Stephen
+Man in wheel chair: Ah, its you. You must be %s correct? I am Stephen, creator of that COMP you are wielding., party[0] 
+Stephen: The COMP uses the demon summoning program which was created by a young man similar to you, though you won't find him in this universe. 
+Stephen: If you haven't noticed already, the COMP allows you to learn abilities that a normal human could never be able to learn. 
+Stephen: The COMP is actually making so that the user imitates a demon, which is also why you are able to talk to them and recruit them. 
+Stephen: The COMP combined with the potential of a human makes for a formidable foe against the demons. 
+Stephen: %s, your current task is to continue beyond this sanctuary, and there you should find the purpose of your being., party[0] 
+Stephen: There you should know the Great Will 
+
+10.Scathach
+Demoness: Well, if it isn't a human. 
+Demoness: Don't worry I won't kill you. I am Scathach. 
+Scathach: I've sent my best pupil to guard this sanctuary. He has done a splendid job at preventing the worst of the demons to come through. 
+Scathach: Though, knowing him, he is dying to receive a good challenge. 
+Scathach: Hmmm. 
+Scathach: You have potential. Maybe he'll be thrilled to fight you. 
+Scathach: Be warned though, he is quite adept to using magic and his fancy lance. 
+Scathach: Oh and between you and me, I think the way he talks is too cheesy HAHAHA! 
+// Come back to me when you are at your strongest 
+
+11. Bickering Demon
+n\nDemon: Listen to me, boy! The angels have brainwashed you humans for a long time! 
+Demon: You don't even know how noble master Lucifer's mission is! 
+Demon: Besides, they call themselves angels even though they are still demons like us! 
+Demon: If you side them, I hope you have fun living under their tyrannical rule for the rest of eternity! 
+
+12. Bickering Angel
+\n\nAngel: Don't taint your ears from the likes of a demon. 
+Angel: We offer peace and stability to those who believe in our cause. 
+Angel: We want to avoid the savage ways of the demons and instead create a Eutopia under the Creator. 
+ 
+12. Traveler
+\n\nWhile wandering, you find a traveler, gravely injured 
+Traveler:...you...look strong *cough* 
+Traveler:...please...take...Nihil 
+The traveler slowly pushes his sword towards you, you notice that it's blade is shattered 
+Traveler: ...it will...do you good... 
+You hold the sword and knee beside the traveler. With his last strength, he hands you a necklace 
+Traveler:...Suzie... 
+>The traveler dies, you take his broken sword and necklace to uphold his honor 
+
+13. Advising Demon
+You see a demon up ahead, but it doesn't seem to want to fight 
+Demon: Behind this wall is a strong one. If you were to fight him unprepared, you would most certainly die 
+Demon: But if you were too somehow make yourself stronger...then maybe 
+
+13. Cu Chulainn
+What venturous soul enters the realm of the demons? 
+I am Cu Chulainn, protector of this sanctuary, and you must be the %s I've been hearing so much about from my teacher., party[0]
+Cu Chulainn: For the past several decades, I have seen the damage done by both Lucifer's army as well as the Angelic forces sent from the Creator. 
+Cu Chulainn: This war will never end by the forces of Law or Chaos themselves. 
+Cu Chulainn: As determined by the Great Will, it is only up to mankind where the balance will be tipped, and I stand here to protect the realm where the foretold messiah will emerge from. 
+Cu Chulainn: If you dare to change the fate of mankind, you must prove your worthiness with your life! 
+
+13.5 Cu After Battle
+Cu Chulainn: Hmph...well done. You have proven your worthiness to me and I shall let you pass. 
+Cu Chulainn: Let this be a warning though, your road is to be full of tribulations. 
+Cu Chulainn: Don't let that deter you. You must be strong. 
+Cu Chulainn: Your choice is the one that all of mankind will be living under by. 
+Cu Chulainn: Now...go off! 
+
+14. Credits & After Credits
+Thank You for playing Shin Megami Tensei: Exodus
+Voice: Tatsuhiro, is that you? 
+A woman stands there, she seems familiar but you've never seen her before 
+Woman: I told you I was going to see you in the next life. You dont remember...? 
+>... 
+Player: ...Heroine..
+>Heroine Smies
+Heroine: I've been waiting for you..., heroine[0] 
+Heroine: player
+

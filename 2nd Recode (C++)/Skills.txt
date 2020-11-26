@@ -1,0 +1,296 @@
+Name: name of skill
+Type: type of skill
+Target: who will it target
+Number_of_Attacks: how many times it will hit a target
+Damage: base damge of the attack
+Hit: % chance that skill will naturally hit
+Critical: % crit chance, might also stand for aliments later on
+Cost_Type: what resource does it use
+Cost: enter flat cost in MP or percent of max HP
+Descrip: Description of the skill
+
+Name: Attack
+Type: Physical
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 30
+Hit: 70
+Critical: 10
+Cost_Type: HP
+Cost: 0
+Descrip: low physical damage. No cost.
+
+Name: Slash
+Type: Physical
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 45
+Hit: 70
+Critical: 25
+Cost_Type: HP
+Cost: 5
+Descrip: low physical damge with lower accuracy but moderate critical change
+
+Name: Bash
+Type: Physical
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 50
+Hit: 80
+Critical: 15
+Cost_Type: HP
+Cost: 5
+Descrip: Increased low physical damage with moderate accuraccy and low critical chance
+
+Name: Berserk
+Type: Physical
+Target: Random
+Number_of_Attacks: 2 4 
+Damage: 25
+Hit: 70
+Critical: 20
+Cost_Type: HP
+Cost: 10
+Descrip: 2-4 reduced low physical attacks with lower accuracy but moderate critical chance. Target(s) is random.
+
+Name: Deathbound
+Type: Physical
+Target: Party
+Number_of_Attacks: 1 0 
+Damage: 35
+Hit: 80
+Critical: 15
+Cost_Type: HP
+Cost: 0
+Descrip: Low physical attacks with moderate accuracy and low critical chance. Hits all once.
+
+Name: Agi
+Type: Fire
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low fire attack
+
+Name: Maragi
+Type: Fire
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 30
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single low fire attack. Hits all once.
+
+Name: Bufu
+Type: Ice
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low ice attack
+
+Name: Mabufu
+Type: Ice
+Target: Party
+Number_of_Attacks: 1 0 
+Damage: 30
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single ice fire attack. Hits all once.
+
+Name: Zan
+Type: Force
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low force attack
+
+Name: Mazan
+Type: Force
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 30
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single low force attack. Hits all once.
+
+Name: Zandyne
+Type: Force
+Target: Single
+Number_of_Attacks: 1 0 
+Damage: 60
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 0
+Descrip: Single high force attack.
+
+Name: Zio
+Type: Electric
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low electric attack
+
+Name: Mazio
+Type: Electric
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 30
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single low electric attack. Hits all once
+
+Name: Hama
+Type: Light
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low light attack
+
+Name: Mahama
+Type: Light
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 30
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single low light attack. Hits all once.
+
+Name: Mudo
+Type: Dark
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low dark attack
+
+Name: Mamudo
+Type: Dark
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 30
+Hit: 80
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single low dark attack. Hits all once.
+
+Name: Dia
+Type: Heal
+Target: Single
+Number_of_Attacks: 1 0
+Damage: 50
+Hit: 100
+Critical: 0
+Cost_Type: MP
+Cost: 3
+Descrip: Single low heal to 1 ally
+
+Name: Media
+Type: Heal
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 35
+Hit: 100
+Critical: 0
+Cost_Type: MP
+Cost: 6
+Descrip: Single low heal to all allies in party.
+
+Name: Tarukaja
+Type: Support
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 0
+Hit: 100
+Critical: 0 
+Cost_Type: MP
+Cost: 5
+Descrip: Increases party's attack. Max 2 stacks.
+
+Name: Rakukaja
+Type: Support
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 0
+Hit: 100
+Critical: 0  
+Cost_Type: MP
+Cost: 5
+Descrip: Increases party's defense. Max 2 stacks.
+
+Name: Sukukaja
+Type: Support
+Target: Party
+Number_of_Attacks: 1 0 
+Damage: 0
+Hit: 100
+Critical: 0 
+Cost_Type: MP
+Cost: 5
+Descrip: Increases party's hit/evade. Max 2 stacks.
+
+Name: Tarunda
+Type: Support
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 0
+Hit: 100
+Critical: 0 
+Cost_Type: MP
+Cost: 5
+Descrip: Decreases enemy party's attack. Max 2 stacks.
+
+Name: Rakunda
+Type: Support
+Target: Party
+Number_of_Attacks: 1 0
+Damage: 0
+Hit: 100
+Critical: 0  
+Cost_Type: MP
+Cost: 5
+Descrip: Decreases enemy party's defense. Max 2 stacks.
+
+Name: Sukunda
+Type: Support
+Target: Party
+Number_of_Attacks: 1 0 
+Damage: 0
+Hit: 100
+Critical: 0 
+Cost_Type: MP
+Cost: 5
+Descrip: Decreases enemy party's hit/evade. Max 2 stacks.
