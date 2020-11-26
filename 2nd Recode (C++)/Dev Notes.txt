@@ -135,26 +135,3 @@ Ambiitions Additions (fantasy):
       "Ancient One" specializes in heavy magic attacks "Lightspeed" (agility) specializes in attacks that hit multiple times etc.
 
 
-WHAT THE FUCK ARE ARRAY OF Structures
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "demon.h"
-
-void scan(struct EntityInfo *x);
-
-int main(void) {
-  FILE *fp;
-  char *c;
-  int i=0;
-  struct EntityInfo (*Demon)[];
-  Demon=&Entity;
-  scan(*Demon);
-  printf("%s", (*Demon)[0].name);
-  return 0;
-}
-
-void scan(struct EntityInfo *x){
-  (x)[0].name=malloc(sizeof(char*)*10);
-  strcpy((x)[0].name, "Pixie");
-}
