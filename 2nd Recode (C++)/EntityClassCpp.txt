@@ -1,0 +1,79 @@
+/*
+the implementation of the demoninfo
+we will use a structure that is capcable of the following
+- Fast searches given name (or maybe a code ID)
+- Fixed amount of total demons
+- Will only hold the data for each demon
+
+What type of data will we want to store?
+- Name - string
+- HP - int
+- MP - int
+- STR/MAG/VIT/AGI/LUCK - ints
+- Skills - this will require its own structure
+
+What specifically will we want to do?
+- Retreive Information of a specfic demon
+- Show basic information of ALL Demons
+- Incorporate the information for battle and recruitment
+    -this means being able to have the information be relayed to somewhere else
+
+
+Class DemonInfo
+- The first class object will be used to hold the demon info for the rest of the game
+- A new object will be created for encounters
+    - we want the size of the contents to be dynamic
+
+https://repl.it/@SebastianDe2/BelatedVibrantMozbot
+this will help in transferring data
+    
+*/
+#include <iostream>
+#include <fstream>
+#include <string>
+//#include "Entity.h"
+
+using namespace std;
+//using namespace EntityClass;
+
+//namespace EntityClass{
+    Entity::Entity(){
+        lvl = 0; expgain=0; hp=0; mp=0; str=0; mag=0; vit=0; agi=0; luck=0;
+
+        Weakness =  new string[3]; Resist = new string[3]; Void = new string[3];
+
+        Skills = new string[8]; SkillWeight = new int[8];
+    }
+
+    void Entity::FinalSetup(){
+        hp = (lvl + vit)*6;
+        maxhp = hp; //we will differentiate this for when we use this object to make an object for the enemy
+        mp = (lvl + mag)*3;
+        expgain = int(5*lvl/2);
+    }
+    
+    void Entity::operator = (const Entity& source){//copy from one entity to other
+        name = source.name;
+        lvl = source.lvl;
+        expgain = source.expgain;
+        hp = source.hp;
+        maxhp = source.maxhp;
+        mp = source.mp;
+        str = source.str;
+        mag = source.mag;
+        vit = source.vit;
+        agi = source.agi;
+        luck = source.luck;
+        for(int i=0; !source.Weakness[i].empty(); i++)
+            Weakness[i] = source.Weakness[i];
+        for(int i=0; !source.Resist[i].empty(); i++)
+            Resist[i] = source.Resist[i];
+        for(int i=0; !source.Void[i].empty(); i++)
+            Void[i] = source.Void[i];
+
+        for(int i=0; !source.Skills[i].empty(); i++){
+            Skills[i] = source.Skills[i];
+            SkillWeight[i] = source.SkillWeight[i];
+        }
+    }
+//}

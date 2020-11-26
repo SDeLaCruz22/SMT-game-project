@@ -1,0 +1,337 @@
+Name: Pixie
+Level: 1
+STR: 3
+MAG: 6
+VIT: 3
+AGI: 5
+LUCK: 4
+Weakness: Fire
+Resists: Electric
+Voids: None
+Skills: Dia Zio
+Weight: 2 5
+
+Slime
+1
+5
+3
+7
+5
+1
+Physical Force Ice Light
+None
+Dark
+Bash
+5
+
+Name: Knocker
+Level: 2
+STR: 4
+MAG: 3
+VIT: 5
+AGI: 5
+LUCK: 5
+Weakness: Ice Fire
+Resists: None
+Voids: None
+Skills: Tarukaja Bash
+Weight: 3 4
+
+Name: Goblin
+Level: 2
+STR: 4
+MAG: 4
+VIT: 5
+AGI: 5
+LUCK: 4
+Weakness: Electric
+Resists: Force
+Voids: None
+Skills: Zan Bash
+Weight: 4 4
+
+Name: Kobold
+Level: 3
+STR: 6
+MAG: 4
+VIT: 5
+AGI: 4
+LUCK: 4
+Weakness: Electric Force
+Resists: Physical
+Voids: None
+Skills: Slash Berserk
+Weight: 3 3
+
+Name: Jack Frost
+Level: 4
+STR: 4
+MAG: 6
+VIT: 4
+AGI: 5
+LUCK: 5
+Weakness: Fire
+Resists: None
+Voids: Ice
+Skills: Bufu Mabufu
+Weight: 5 3
+
+Name: Pyro Jack
+Level: 4
+STR: 4
+MAG: 5
+VIT: 5
+AGI: 6
+LUCK: 4
+Weakness: Ice
+Resists: None
+Voids: Fire
+Skills: Agi Maragi
+Weight: 4 4
+
+Name: Cu Sith 
+Level: 5
+STR: 5
+MAG: 4
+VIT: 5
+AGI: 7
+LUCK: 4
+Weakness: Force
+Resists: None
+Voids: None
+Skills: Slash Sukukaja
+Weight: 5 3
+
+Name: Hua Po
+Level: 5
+STR: 4
+MAG: 7
+VIT: 4
+AGI: 6
+LUCK: 4
+Weakness: Fire 
+Resists: None
+Voids: None
+Skills: Agi Maragi Rakukaja
+Weight: 4 3 2
+
+Name: Mokoi
+Level: 5
+STR: 6
+MAG: 4
+VIT: 6
+AGI: 5
+LUCK: 4
+Weakness: Ice
+Resists: Electric
+Voids: None
+Skills: Bash Zio
+Weight: 4 3
+
+Ghoul
+6
+6
+3
+6
+6
+5
+Light
+Physical
+Dark
+Slash Mudo
+5 2
+
+Name: Angel
+Level: 6
+STR: 4
+MAG: 7
+VIT: 4
+AGI: 5
+LUCK: 6
+Weakness: Ice
+Resists: Electric
+Voids: Light
+Skills: Dia Hama Zan 
+Weight: 2 3 5
+
+Name: Leanan Sidhe
+Level: 7
+STR: 6
+MAG: 7
+VIT: 5
+AGI: 6
+LUCK: 3
+Weakness: Force
+Resists: Ice
+Voids: None
+Skills: Mabufu Media
+Weight: 4 2
+
+Name: Azumi
+Level: 7
+STR: 5
+MAG: 6
+VIT: 6
+AGI: 5
+LUCK: 5
+Weakness: Fire
+Resists: None
+Voids: Ice
+Skills: Bash Bufu
+Weight: 4 4
+
+Name: Koppa Tengu
+Level: 8
+STR: 5
+MAG: 7
+VIT: 6
+AGI: 6
+LUCK: 4
+Weakness: Electric
+Resists: None
+Voids: Force
+Skills: Mazan Sukunda
+Weight: 3 3
+
+Name: Oni
+Level: 8
+STR: 8
+MAG: 4
+VIT: 7
+AGI: 5
+LUCK: 4
+Weakness: Electric Force
+Resists: Physical
+Voids: None
+Skills: Bash Berserk Rakunda
+Weight: 4 3 3
+
+Name: Nekomata
+Level: 8
+STR: 5
+MAG: 6
+VIT: 5
+AGI: 7
+LUCK: 5
+Weakness: Ice
+Resists: Force
+Voids: None
+Skills: Slash Zan Sukukaja
+Weight: 3 3 2
+
+Name: Apsaras
+Level: 9
+STR: 2
+MAG: 8
+VIT: 6
+AGI: 8
+LUCK: 5
+Weakness: Fire Dark
+Resists: None
+Voids: Ice
+Skills: Mabufu Media Rakukaja
+Weight: 3 2 4
+
+Name: Naga
+Level: 9
+STR: 7
+MAG: 2
+VIT: 6
+AGI: 7
+LUCK: 7
+Weakness: Ice
+Resists: Electric
+Voids: None
+Skills: Slash Maragi Sukunda
+Weight: 3 3 2
+
+Name: Okiku Mushi
+Level: 9
+STR: 5
+MAG: 5
+VIT: 6
+AGI: 4
+LUCK: 9
+Weakness: Fire Light
+Resists: Physical
+Voids: Dark
+Skills: Berserk Mudo
+Weight: 4 2
+
+Name: Mothman
+Level: 9
+STR: 4
+MAG: 4
+VIT: 5
+AGI: 8
+LUCK: 8
+Weakness: Force
+Resists: Electric
+Voids: None
+Skills: Mazio Sukukaja Bash
+Weight: 3 2 4
+
+Name: Lillim
+Level: 10
+STR: 4
+MAG: 9
+VIT: 5
+AGI: 8
+LUCK: 4
+Weakness: Fire Light
+Resists: None
+Voids: Electric Dark
+Skills: Media Zio Mazio
+Weight: 2 4 3
+
+Name: Momunofu
+Level: 10
+STR: 7
+MAG: 5
+VIT: 8
+AGI: 6
+LUCK: 4
+Weakness: Fire
+Resists: Force
+Voids: None
+Skills: Slash Tarukaja Berserk
+Weight: 3 3 3
+
+Name: Kodama
+Level: 10
+STR: 7
+MAG: 7
+VIT: 6
+AGI: 6
+LUCK: 7
+Weakness: Ice, Electric
+Resists: None
+Voids: Force
+Skills: Rakukaja Tarunda Zan
+Weight: 2 2 5
+
+Archangel
+10
+7
+7
+7
+5
+4
+Dark
+None
+Light
+Tarukaja Mahama Slash
+2 2 5
+
+Name: Cu Chulainn
+Level: 15
+STR: 10
+MAG: 8
+VIT: 10
+AGI: 5
+LUCK: 3
+Weakness: None
+Resists: None
+Voids: Force Light Dark
+Skills: Zandyne Deathbound
+Weight: 3 6
