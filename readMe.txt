@@ -1,2 +1,2 @@
-The 2nd recode is a work in progress and addition to the original code. THe original code does compile on its own.
-Purpose of keeping the original is that it is a working prototype. The recode is meant to showcase my current skills versus what I started off with.
+The original code was my first real project with coding experience and it was the reason I decided to change my major to CSE. On its own the original code does compile, though any experienced programmer would know that it looks horrendous. But I think its good to keep it in. I was proud when I made it and I can use it to see how far my skills have come. 
+The 2nd recode is a work in progress rework of the original code. More details in that folder
